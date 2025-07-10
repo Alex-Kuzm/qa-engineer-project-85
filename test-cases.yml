@@ -103,7 +103,7 @@
     - Нажать кнопку «Submit»
   expected-result: |
     Поле ввода email выделяется красным
-    Показывает сообщение "Email is already taken"
+    Под полем ввода появляется "Email is already taken"
     Регистрация не происходит
 
 - №5 summary: |
@@ -127,7 +127,7 @@
     - Нажать кнопку «Submit»
   expected-result: |
     Поле ввода nickname выделяется красным
-    Показывает сообщение "Nickname is already taken"
+    Под полем ввода появляется "Nickname is already taken"
     Регистрация не происходит
 
 - №6 summary: |
@@ -151,7 +151,7 @@
     - Нажать кнопку «Submit»
   expected-result: |
     Поле ввода nickname выделяется красным
-    Показывает сообщение "Should be from 3 to 16 characters"
+    Под полем ввода появляется сообщение "Should be from 3 to 16 characters"
     Регистрация не происходит
     
 - №7 summary: |
@@ -175,8 +175,8 @@
     - Нажать кнопку «Submit»
   expected-result: |
     Поле ввода nickname выделяется красным
-    Показывает сообщение "Should be from 3 to 16 characters"
-    Регистрация не происходит
+    Под полем ввода появляется сообщение "Should be from 3 to 16 characters"
+    Регистрацияся не происходит
 
 - №8 summary: |
     Проверка регистрации нового пользователя с помощью формы регистрации и ввода невалидных данных
@@ -199,5 +199,5 @@
     - Нажать кнопку «Submit»
   expected-result: |
     Поле ввода nickname выделяется красным
-    Показывает сообщение "Must consist of Latin letters, numbers and underscores. Only begin with latin letter"
+    Под полем ввода появляется сообщение "Must consist of Latin letters, numbers and underscores. Only begin with latin letter"
     Регистрация не происходит
