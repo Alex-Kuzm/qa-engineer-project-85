@@ -209,6 +209,54 @@
     Регистрация не происходит
 
 - №10 summary: |
+    Проверка регистрации нового пользователя с помощью формы регистрации и ввода невалидных данных password
+  requirement: |
+    При вводе невалидных данных password невозможна регистрация
+  prerequisites: |
+    - Пользователь ранее не зарегистрирован
+    - Форма регистрации доступна и открыта
+  test-data: |
+    - Nickname = example2
+    - Email = example2gmail.com
+    - Password = example2
+    - Password Confirmation = example2
+  steps:
+    - Открыть страницу регистрации
+    - Ввести Nickname = example2
+    - Ввести Email = example2gmail.com
+    - Ввести Password = example2
+    - Ввести Password Confirmation = example2
+    - Нажать кнопку «Submit»
+  expected-result: |
+    Поле ввода "password" выделяется красным
+    Под полем ввода появляется сообщение "Should contain at least one special character"
+    Регистрация не происходит
+
+- №11 summary: |
+    Проверка регистрации нового пользователя с помощью формы регистрации и ввода невалидных данных password confirmation
+  requirement: |
+    При вводе невалидных данных password confirmation невозможна регистрация
+  prerequisites: |
+    - Пользователь ранее не зарегистрирован
+    - Форма регистрации доступна и открыта
+  test-data: |
+    - Nickname = example2
+    - Email = example2gmail.com
+    - Password = example2!
+    - Password Confirmation = example2!!
+  steps:
+    - Открыть страницу регистрации
+    - Ввести Nickname = example2
+    - Ввести Email = example2gmail.com
+    - Ввести Password = example2!!
+    - Ввести Password Confirmation = example2!!
+    - Нажать кнопку «Submit»
+  expected-result: |
+    Поле ввода "password confirmation" выделяется красным
+    Под полем ввода появляется сообщение "Passwords must match"
+    Регистрация не происходит
+
+- №12 summary: |
     Проверка входа по валидным email/password
   requirement: |
     При вводе валидных данных email/password происходит авторизация
@@ -228,7 +276,7 @@
     Происходит редирект на главную страницу
     В шапке сайта отображается никнейм "example2"
 
-- №11 summary: |
+- №13 summary: |
     Проверка входа через OAuth (GitHub)
   requirement: |
     При клике на "Sign in with Github" происходит авторизация
@@ -248,7 +296,7 @@
     Отображается системное сообщение: "Successfully authenticated"
     В шапке сайта отображается никнейм и аватар из профиля Github
 
-- №12 summary: |
+- №14 summary: |
     Проверка авторизации через OAuth (Discord)
   requirement: |
     При клике на "Sign in with Discord" происходит регистрация и автоматическая авторизация
@@ -268,7 +316,7 @@
     Отображается системное сообщение: "Successfully authenticated"
     В шапке сайта отображается никнейм и аватар из профиля Discord
 
-- №13 summary: |
+- №15 summary: |
     Проверка входа по невалидному email
   requirement: |
     При вводе невалидных данных email авторизация не происходит
@@ -288,7 +336,7 @@
     Под полем ввода появляется сообщение "Invalid email"
     Авторизация не происходит
 
-- №13 summary: |     #баг!!!!!!!!!!!!!!!
+- №16 summary: |     #баг!!!!!!!!!!!!!!!
     Проверка входа по невалидному password
   requirement: |
     При вводе невалидных данных password авторизация не происходит
@@ -308,7 +356,7 @@
     Под полем ввода появляется сообщение "Invalid password"
     Авторизация не происходит
 
-- №14 summary: |     #баг!!!!!!!!!!!!!!!  
+- №17 summary: |     #баг!!!!!!!!!!!!!!!  
     Проверка входа по неправильному password
   requirement: |
     При вводе неправильных данных password авторизация не происходит
