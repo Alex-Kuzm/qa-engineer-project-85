@@ -43,7 +43,7 @@
     В шапке сайта отображается никнейм "example2"
 
 - №2 summary: |
-    Проверка регистрации нового пользователя через OAuth
+    Проверка регистрации через OAuth (GitHub)
   requirement: |
     При клике на Sign up with Github регистрация и автоматическая авторизация
   prerequisites: |
@@ -63,7 +63,7 @@
     В шапке сайта отображается никнейм и аватар из профиля Github
 
 - №3 summary: |
-    Проверка регистрации нового пользователя через OAuth
+    Проверка регистрации через OAuth (Discord)
   requirement: |
     При клике на Sign up with Discord регистрация и автоматическая авторизация
   prerequisites: |
@@ -102,7 +102,7 @@
     - Ввести Password Confirmation = example2!
     - Нажать кнопку «Submit»
   expected-result: |
-    Поле ввода email выделяется красным
+    Поле ввода "email" выделяется красным
     Под полем ввода появляется "Email is already taken"
     Регистрация не происходит
 
@@ -126,7 +126,7 @@
     - Ввести Password Confirmation = example2!
     - Нажать кнопку «Submit»
   expected-result: |
-    Поле ввода nickname выделяется красным
+    Поле ввода "nickname" выделяется красным
     Под полем ввода появляется "Nickname is already taken"
     Регистрация не происходит
 
@@ -150,7 +150,7 @@
     - Ввести Password Confirmation = example2!
     - Нажать кнопку «Submit»
   expected-result: |
-    Поле ввода nickname выделяется красным
+    Поле ввода "nickname" выделяется красным
     Под полем ввода появляется сообщение "Should be from 3 to 16 characters"
     Регистрация не происходит
     
@@ -174,7 +174,7 @@
     - Ввести Password Confirmation = example2!
     - Нажать кнопку «Submit»
   expected-result: |
-    Поле ввода nickname выделяется красным
+    Поле ввода "nickname" выделяется красным
     Под полем ввода появляется сообщение "Should be from 3 to 16 characters"
     Регистрацияся не происходит
 
@@ -198,6 +198,6 @@
     - Ввести Password Confirmation = example2!
     - Нажать кнопку «Submit»
   expected-result: |
-    Поле ввода nickname выделяется красным
+    Поле ввода "nickname" выделяется красным
     Под полем ввода появляется сообщение "Must consist of Latin letters, numbers and underscores. Only begin with latin letter"
     Регистрация не происходит
