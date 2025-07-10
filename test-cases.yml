@@ -16,3 +16,28 @@
     - Нажимаем кнопку «Войти»
   expected-result: |
     Пользователь должен попасть на главную страницу
+
+- №1 summary: |
+    Проверка регистрации нового пользователя с помощью формы регистрации
+  requirement: |
+    При вводе валидных данных происходит регистрация и автоматическая авторизация
+  prerequisites: |
+    - Пользователь ранее не зарегистрирован
+    - Форма регистрации доступна и открыта
+  test-data: |
+    - Nickname = example2
+    - Email = example2@gmail.com
+    - Password = example2!
+    - Password Confirmation = example2!
+  steps:
+    - Открыть страницу регистрации
+    - Ввести Nickname = example2
+    - Ввусти Email = example2@gmail.com
+    - Вводим Password = example2!
+    - Вводим Password Confirmation = example2!
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь автоматически авторизован
+    Происходит редирект на главную страницу
+    Отображается системное сообщение: "Successfully authenticated"
+    В шапке сайта отображается никнейм "example2"
