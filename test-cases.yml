@@ -216,11 +216,11 @@
     - Пользователь ранее зарегистрирован
     - Форма входа доступна и открыта
   test-data: |
-    - Email = example2gmail.com
-    - Nickname = example2
+    - Email = example2@gmail.com
+    - Password = example2!
   steps:
     - Открыть страницу входа
-    - Ввести Email = example2gmail.com
+    - Ввести Email = example2@gmail.com
     - Ввести Password = example2!
     - Нажать кнопку «Submit»
   expected-result: |
@@ -267,3 +267,63 @@
     Происходит редирект на главную страницу
     Отображается системное сообщение: "Successfully authenticated"
     В шапке сайта отображается никнейм и аватар из профиля Discord
+
+- №13 summary: |
+    Проверка входа по невалидному email
+  requirement: |
+    При вводе невалидных данных email авторизация не происходит
+  prerequisites: |
+    - Пользователь ранее зарегистрирован
+    - Форма входа доступна и открыта
+  test-data: |
+    - Email = example2gmail.com
+    - Password = example2!
+  steps:
+    - Открыть страницу входа
+    - Ввести Email = example2gmail.com
+    - Ввести Password = example2!
+    - Нажать кнопку «Submit»
+  expected-result: |
+    Поле ввода "email" выделяется красным
+    Под полем ввода появляется сообщение "Invalid email"
+    Авторизация не происходит
+
+- №13 summary: |     #баг!!!!!!!!!!!!!!!
+    Проверка входа по невалидному password
+  requirement: |
+    При вводе невалидных данных password авторизация не происходит
+  prerequisites: |
+    - Пользователь ранее зарегистрирован
+    - Форма входа доступна и открыта
+  test-data: |
+    - Email = example2@gmail.com
+    - Password = example2
+  steps:
+    - Открыть страницу входа
+    - Ввести Email = example2gmail.com
+    - Ввести Password = example2
+    - Нажать кнопку «Submit»
+  expected-result: |
+    Поле ввода "password" выделяется красным
+    Под полем ввода появляется сообщение "Invalid password"
+    Авторизация не происходит
+
+- №14 summary: |     #баг!!!!!!!!!!!!!!!  
+    Проверка входа по неправильному password
+  requirement: |
+    При вводе неправильных данных password авторизация не происходит
+  prerequisites: |
+    - Пользователь ранее зарегистрирован
+    - Форма входа доступна и открыта
+  test-data: |
+    - Email = example2@gmail.com
+    - Password = example2!!
+  steps:
+    - Открыть страницу входа
+    - Ввести Email = example2gmail.com
+    - Ввести Password = example2!!
+    - Нажать кнопку «Submit»
+  expected-result: |
+    Поле ввода "password" выделяется красным
+    Под полем ввода появляется сообщение "несуществующий пароль"
+    Авторизация не происходит
