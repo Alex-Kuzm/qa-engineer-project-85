@@ -45,7 +45,7 @@
 - №2 summary: |
     Проверка регистрации нового пользователя через OAuth
   requirement: |
-    При клике на Sign up with Github регистрация и автоматическая авторизацияx
+    При клике на Sign up with Github регистрация и автоматическая авторизация
   prerequisites: |
     - Пользователь ранее не зарегистрирован
     - У пользователя есть аккаунт GitHub
@@ -65,7 +65,7 @@
 - №3 summary: |
     Проверка регистрации нового пользователя через OAuth
   requirement: |
-    При клике на Sign up with Discord регистрация и автоматическая авторизацияx
+    При клике на Sign up with Discord регистрация и автоматическая авторизация
   prerequisites: |
     - Пользователь ранее не зарегистрирован
     - У пользователя есть аккаунт Discord
@@ -121,7 +121,7 @@
   steps:
     - Открыть страницу регистрации
     - Ввести Nickname = example2
-    - Ввусти Email = example2@gmail.com
+    - Ввести Email = example2@gmail.com
     - Ввести Password = example2!
     - Ввести Password Confirmation = example2!
     - Нажать кнопку «Submit»
@@ -145,10 +145,10 @@
   steps:
     - Открыть страницу регистрации
     - Ввести Nickname = ex
-    - Ввусти Email = example2@gmail.com
-    - Вводим Password = example2!
-    - Вводим Password Confirmation = example2!
-    - Нажимаем кнопку «Submit»
+    - Ввести Email = example2@gmail.com
+    - Ввести Password = example2!
+    - Ввести Password Confirmation = example2!
+    - Нажать кнопку «Submit»
   expected-result: |
     Поле ввода nickname выделяется красным
     Показывает сообщение "Should be from 3 to 16 characters"
@@ -169,10 +169,10 @@
   steps:
     - Открыть страницу регистрации
     - Ввести Nickname = example2example22
-    - Ввусти Email = example2@gmail.com
-    - Вводим Password = example2!
-    - Вводим Password Confirmation = example2!
-    - Нажимаем кнопку «Submit»
+    - Ввести Email = example2@gmail.com
+    - Ввести Password = example2!
+    - Ввести Password Confirmation = example2!
+    - Нажать кнопку «Submit»
   expected-result: |
     Поле ввода nickname выделяется красным
     Показывает сообщение "Should be from 3 to 16 characters"
@@ -193,10 +193,10 @@
   steps:
     - Открыть страницу регистрации
     - Ввести Nickname = пример
-    - Ввусти Email = example2@gmail.com
-    - Вводим Password = example2!
-    - Вводим Password Confirmation = example2!
-    - Нажимаем кнопку «Submit»
+    - Ввести Email = example2@gmail.com
+    - Ввести Password = example2!
+    - Ввести Password Confirmation = example2!
+    - Нажать кнопку «Submit»
   expected-result: |
     Поле ввода nickname выделяется красным
     Показывает сообщение "Must consist of Latin letters, numbers and underscores. Only begin with latin letter"
