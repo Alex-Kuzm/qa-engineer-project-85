@@ -320,7 +320,7 @@
     - Открыть страницу регистрации
     - Ввести Nickname = example2
     - Ввести Email = example2gmail.com
-    - Ввести Password = example2!!
+    - Ввести Password = example2!
     - Ввести Password Confirmation = example2!!
     - Нажать кнопку «Submit»
   expected-result: |
