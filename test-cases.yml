@@ -580,7 +580,7 @@
     - Ввести Email = example2@gmail.com
     - Нажать кнопку "Submit"
     - В полученном письме перейти по ссылке
-    - Ввести новый пароль "example2"
+    - Ввести новый пароль "examp"
     - Нажать кнопку "Submit"
   expected-result: |
     После ввода email появляется сообщение "We have sent you an email with instructions on how to reset your password"
