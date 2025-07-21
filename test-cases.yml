@@ -585,7 +585,7 @@
   expected-result: |
     После ввода email появляется сообщение "We have sent you an email with instructions on how to reset your password"
     После ввода нового пароля поле ввода выделяется красным
-    Под полем ввода появляется сообщение "Invalid password"
+    Под полем ввода появляется сообщение "The password must be at least 6 characters long"
 
 - №30 summary: | 
     Проверка возврата на страницу регистрации со страницы сброса пароля
