@@ -1743,8 +1743,17 @@
     Не требуется
   steps:
     - Пользователь №1 вводит код
-    - Пользователь №2 проигрывает
+#const _ = require("lodash");
+#const R = require("rambda");
+
+#const solution = (width, length) => {
+#  return width * length;
+#};
+
+#module.exports = solution;
+    - Нажимает "run"
   expected-result: |
+    Пользователь №1 выигрывает
     У пользователя №1 прибавляются очки рейтинга
     У пользователя №2 отнимаются очки рейтинга
 
