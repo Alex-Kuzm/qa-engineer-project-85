@@ -1,11 +1,8 @@
 ---
 issue:
-  - №26 url: "https://github.com/hexlet-codebattle/codebattle/issues/2188"
-  - №27 url: "https://github.com/hexlet-codebattle/codebattle/issues/2188"
-  - №29 url: "https://github.com/hexlet-codebattle/codebattle/issues/1893"
-  - №46 url: "https://github.com/hexlet-codebattle/codebattle/issues/2187"
-  - №52 url: "https://github.com/hexlet-codebattle/codebattle/issues/2189"
-  - №68 url: "https://github.com/hexlet-codebattle/codebattle/issues/2163"
-  - №77 url: "https://github.com/hexlet-codebattle/codebattle/issues/2088"
-  - №78 url: "https://github.com/hexlet-codebattle/codebattle/issues/2088"
-  - №79 url: "https://github.com/hexlet-codebattle/codebattle/issues/2088"
+  - url: "https://github.com/hexlet-codebattle/codebattle/issues/2188"
+  - url: "https://github.com/hexlet-codebattle/codebattle/issues/1893"
+  - url: "https://github.com/hexlet-codebattle/codebattle/issues/2187"
+  - url: "https://github.com/hexlet-codebattle/codebattle/issues/2189"
+  - url: "https://github.com/hexlet-codebattle/codebattle/issues/2163"
+  - url: "https://github.com/hexlet-codebattle/codebattle/issues/2088"
