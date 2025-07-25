@@ -79,14 +79,14 @@
     - Пользователь ранее не зарегистрирован
     - Форма регистрации доступна и открыта
   test-data: |
-    - Nickname = example2
-    - Email = example2@gmail.com
+    - Nickname (новый, ранее не используемый)
+    - Email (новый, ранее не используемый)
     - Password = example2!
     - Password Confirmation = example2!
   steps:
     - Открыть страницу регистрации
-    - Ввести Nickname = example2
-    - Ввести Email = example2@gmail.com
+    - Ввести Nickname
+    - Ввести Email
     - Ввести Password = example2!
     - Ввести Password Confirmation = example2!
     - Нажать кнопку «Submit»
